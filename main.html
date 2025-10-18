@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-100">
+
+    <header class="bg-white shadow-md h-28 w-[1586px] mx-16 rounded-lg">
+        <nav class="flex justify-between items-center px-8 py-4">
+            <div class=" flex gap-1 my-3">
+                <img src="assets/logo.png" alt="">
+                <h1 class=" text-4xl">Dev<span class=" font-bold">Board</span></h1>
+            </div>
+            <button id="btn-back" class=" bg-purple-800 p-3 rounded-lg text-white">Back to Desk</button>
+        </nav>
+    
+
+    </header>
+    
+    <br>
+    <h1 class=" text-2xl font-bold text-center">Blogs</h1>
+    <br>
+    <main>
+        <section class="bg-white shadow-md h-16 w-[1586px] mx-16 rounded-lg">
+            <h1 class=" text-2xl font-bold p-3">Question-1: What are the different ways to select an element in the DOM?</h1>
+        </section>
+        <section class="bg-white shadow-md h-24 w-[1586px] mx-16 rounded-lg my-1">
+            <p class=" text-2xl text-gray-400 p-2">getElementById() , getElementsByClassName() , querySelector()</p>
+        </section>
+        <section class="bg-white shadow-md h-16 w-[1586px] mx-16 rounded-lg">
+            <h1 class=" text-2xl font-bold p-3">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+        </section>
+        <section class="bg-white shadow-md h-28 w-[1586px] mx-16 rounded-lg my-1 p-1">
+            <p class=" text-2xl text-gray-400 p-2">innerHTML : Returns or sets the HTML markup  inside an element.
+                <br>
+                innerText : Returns or sets the visible text of an element
+                <br>
+                textContent : Returns or sets all the text inside an element</p>
+        </section>
+        <section class="bg-white shadow-md h-16 w-[1586px] mx-16 rounded-lg">
+            <h1 class=" text-2xl font-bold p-3">Question-3: What is event delegation in the DOM?</h1>
+        </section>
+        <section class="bg-white shadow-md h-28 w-[1586px] mx-16 rounded-lg my-1 p-1">
+            <p class=" text-2xl text-gray-400 p-2">Event Delegation is a powerful technique in the DOM where instead of adding event listeners to multiple child elements, you add one single event listener to their parent element and handle events for all children through it.</p>
+        </section>
+        <section class="bg-white shadow-md h-16 w-[1586px] mx-16 rounded-lg">
+            <h1 class=" text-2xl font-bold p-3">Question-4: What is event bubbling in the DOM?</h1>
+        </section>
+        <section class="bg-white shadow-md h-28 w-[1586px] mx-16 rounded-lg my-1 p-1">
+            <p class=" text-2xl text-gray-400 p-2">Event Bubbling is a concept in the DOM event flow where an event starts from the innermost (child) element that triggered it and then bubbles up to its parent, grandparent, and so on all the way up to the html element.</p>
+        </section>
+        <section class="bg-white shadow-md h-16 w-[1586px] mx-16 rounded-lg">
+            <h1 class=" text-2xl font-bold p-3">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+        </section>
+        <section class="bg-white shadow-md h-28 w-[1586px] mx-16 rounded-lg my-1 p-1">
+            <p class=" text-2xl text-gray-400 p-2">Adding an Element : appendChild() <br>
+            Removing an Element : removeChild()</p>
+        </section>
+    </main>
+   
+    <script>
+        document.getElementById('btn-back').addEventListener('click' , function(){
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>
